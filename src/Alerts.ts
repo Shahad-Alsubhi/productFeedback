@@ -11,30 +11,30 @@ export const successAlert = () => {
   });
 };
 
-export const promtLogin =  async () => {
-   await Swal.fire({
+export const promtLogin = async () => {
+  await Swal.fire({
     title: "You need to log in to continue.",
     showCancelButton: true,
     html: `<div id="googleLogin" style={{"margin":"auto"}}></div>`,
     showConfirmButton: false,
     customClass: {
       title: "swal2-title",
-
     },
-    didOpen:()=>{
-      const googleButton = document.querySelector("#googleLogin") as HTMLElement;
+    didOpen: () => {
+      const googleButton = document.querySelector(
+        "#googleLogin"
+      ) as HTMLElement;
       google.accounts.id.renderButton(googleButton, {
         theme: "outline",
         size: "large",
-        type: "standard"
+        type: "standard",
       });
-      googleButton?.addEventListener("click", () => {
+
+      document.querySelector("#googleLogin")?.addEventListener("click", () => {
         Swal.close();
       });
- 
-  }
-});
-  
+    },
+  });
 };
 
 export const errorAlert = () => toast.error("Something went wrong ...");
