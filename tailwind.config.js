@@ -16,6 +16,15 @@ export default {
         gray: { default: "#647196", hover: "#656ea3", light: "#f7f8fd" },
         "off-white": "#f2f4ff",
       },
+      keyframes: {
+        transfer: {
+          'from': { transform: 'translateX(100%)' },
+          'to': { transform: 'translateX(0%)' },
+        },
+      },
+      animation: {
+        transfer: 'transfer 0.5s ease-in-out',
+      },
     },
   },
   plugins: [],
