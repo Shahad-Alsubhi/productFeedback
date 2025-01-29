@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-import Dropdown from "../components/Dropdown";
+// import Dropdown from "../components/Dropdown";
 import GoBackButton from "../components/GoBackButton";
 import Label from "../components/Label";
 
@@ -55,19 +55,19 @@ const EditFeedback = () => {
           htmlFor="Category"
           description="Choose a category for your feedback"
         />
-        <Dropdown
+        {/* <Dropdown
           options={["Feature", "Enhancement", "Bug", "UI", "UX"]}
           customStyle="bg-gray-light md:w-full border border-gray-light focus:border-blue-default p-3 flex justify-between items-center !text-blue-dark "
-        />
+        /> */}
         <Label
           lable="Update Status"
           htmlFor="Update Status"
           description="Change feature state"
         />
-        <Dropdown
+        {/* <Dropdown
           options={["Suggestion", "Planned", "In-Progress", "Live"]}
           customStyle="bg-gray-light md:w-full border border-gray-light focus:border-blue-default p-3 flex justify-between items-center !text-blue-dark "
-        />
+        /> */}
         <Label
           lable="Feedback Detail"
           description="Include any specific comments on what should be improved, added, etc."
