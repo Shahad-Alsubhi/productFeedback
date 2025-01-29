@@ -18,7 +18,7 @@ const NewFeedback = () => {
       <GoBackButton />
       <form
         onSubmit={(e) => handleSubmit(e, selectedCategory as Category)}
-        className="bg-white relative rounded-xl mt-9 p-9 [&>*]:rounded-lg [&>*]:mb-9 last:[&>*]:mb-0 "
+        className="bg-white relative rounded-xl mt-9 p-9 [&>*]:rounded-lg [&>*]:mb-9 last:[&>*]:mb-0"
       >
         <svg
           width="56"
@@ -49,13 +49,11 @@ const NewFeedback = () => {
             />
           </g>
         </svg>
-        <h1 className="font-bold text-2xl mb-10  max-md:text-lg">
+        <h1 className="font-bold text-2xl !mb-4 max-md:text-lg">
           Create New Feedback
         </h1>
 
-        {validateError && (
-          <h2 className="text-red-default">All fields are required</h2>
-        )}
+          <h2 className={`text-red-default ${validateError?"visible":"invisible"} !mb-5`}>All fields are required</h2>
         <Label
           lable="Feedback Title"
           description="Add a short, descriptive headline"

@@ -15,10 +15,11 @@ export const promtLogin =  async () => {
    await Swal.fire({
     title: "You need to log in to continue.",
     showCancelButton: true,
-    html: `<div id="googleLogin"></div>`,
+    html: `<div id="googleLogin" style={{"margin":"auto"}}></div>`,
     showConfirmButton: false,
     customClass: {
       title: "swal2-title",
+
     },
     didOpen:()=>{
       const googleButton = document.querySelector("#googleLogin") as HTMLElement;

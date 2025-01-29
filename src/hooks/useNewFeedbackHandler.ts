@@ -11,7 +11,6 @@ const useNewFeedbackHandler = () => {
   const { isLoading, mutate } = useCreateFeedback();
   const navigate = useNavigate();
   const { accessToken } = useContext(UserContext);
-  console.log(accessToken, "lk");
 
   const location = useLocation();
 

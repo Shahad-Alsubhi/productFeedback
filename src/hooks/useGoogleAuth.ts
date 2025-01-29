@@ -15,7 +15,7 @@ const useGoogleAuth = () => {
     }
   }, []);
   const handleCredentialResponse = async (credential: string) => {
-    const res = await fetch("http://localhost:3000/users/auth/signin", {
+    const res = await fetch("https://productfeedback-backend.onrender.com/users/auth/signin", {
       method: "post",
       headers: { "Content-Type": "Application/json" },
       body: JSON.stringify({ credential }),
