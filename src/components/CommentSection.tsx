@@ -42,7 +42,7 @@ const CommentSection = ({
         } [&>*]:ml-9 last:[&>*]:pl-9 last:[&>*]:ml-0 last:[&>*]:relative last:[&>*]:z-10 first:[&>*]:pb-0 last:[&>*]:pb-7`}
       >
         {replies.map((comment) => {
-          return <Comment setReplay={setReplay} data={comment} />;
+          return <Comment setReplay={setReplay} key={comment._id} data={comment} />;
         })}
       </div>
 

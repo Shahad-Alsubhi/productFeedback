@@ -17,7 +17,6 @@ export const SortContext = createContext<SortContextType>({
 
 const SortProvider = ({ children }: { children: ReactNode }) => {
   const [sortOption, setSortOption] = useState<sortOption>("Most Upvotes");
-  console.log(sortOption);
   
   return (
     <SortContext.Provider value={{ sortOption, setSortOption }}>

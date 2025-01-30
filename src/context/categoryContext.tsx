@@ -14,7 +14,6 @@ export const CategoryContext=createContext<CategoryContextType>({categoryList:[]
 
 const CategoryProvider=({children}:{children:ReactNode})=>{
     const [categoryList,setCategoryList]=useState<Category []>([]);
-     console.log(categoryList);
      
 return(
     <CategoryContext.Provider value={{categoryList,setCategoryList}}>

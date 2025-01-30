@@ -12,13 +12,21 @@ const Comment = ({
     <div className="py-7 bg-white">
       <div className="flex ">
         <img
-          src={data.created_by.picture || "https://res.cloudinary.com/deqnekemi/image/upload/v1725335063/icon-account-g_tsltyd.png"}
+          src={data.created_by.picture}
+          onError={(e) => {
+            (e.target as HTMLImageElement).src =
+              "https://res.cloudinary.com/deqnekemi/image/upload/v1725335063/icon-account-g_tsltyd.png";
+          }}
           className="w-10 h-10 rounded-full mr-4 shrink-0"
           alt="user's profile picture"
         />
         <div className="flex-shrink overflow-hidden mr-2">
-          <h1 className="font-bold text-nowrap truncate
-          ">{data.created_by.name}</h1>
+          <h1
+            className="font-bold text-nowrap truncate
+          "
+          >
+            {data.created_by.name}
+          </h1>
           <h2 className="text-sm md:text-base text-gray-default ">
             {data.created_by.username}{" "}
           </h2>

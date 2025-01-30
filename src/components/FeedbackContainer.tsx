@@ -13,7 +13,6 @@ const FeedbackContainer = () => {
   const { categoryList } = useContext(CategoryContext);
   const { sortOption } = useContext(SortContext);
   const [feedbacks, setFeedbacks] = useState<IFeedback[]>([]);
-  console.log(feedbacks,sortOption);
   
   useEffect(() => {
     if (data) {
