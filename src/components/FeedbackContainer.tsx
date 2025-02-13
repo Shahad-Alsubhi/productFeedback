@@ -40,7 +40,7 @@ const FeedbackContainer = () => {
   }, [sortOption, data]);
   
   return (
-    <div className="max-md:mt-7 [&>*]:mb-5">
+    <div className=" [&>*]:mb-5 max-md:pt-[72px]">
       {isLoading ? (
         [1, 2, 3, 4, 5].map((num) => <FeedbackSkeleton key={num} />)
       ) : isError ? (

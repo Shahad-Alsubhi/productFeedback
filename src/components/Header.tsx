@@ -16,7 +16,7 @@ const Header = () => {
         } `}
     >
       <div
-        className={`flex justify-between relative z-20  items-center md:items-end p-6 self-stretch lg:h-[137px] bg-[url("/images/background-sm.png")] max-md:w-full max-md:h-[72px] md:rounded-xl md:bg-[url("/images/background-md.png")] lg:bg-[url("/images/background-lg.png")] bg-no-repeat bg-cover`}
+        className={`flex justify-between relative z-20 max-md:fixed  items-center md:items-end p-6 self-stretch lg:h-[137px] bg-[url("/images/background-sm.png")] max-md:w-full max-md:h-[72px] md:rounded-xl md:bg-[url("/images/background-md.png")] lg:bg-[url("/images/background-lg.png")] bg-no-repeat bg-cover`}
       >
         <h1 className="text-white text-base md:text-xl font-bold">
           Frontend Mentor
