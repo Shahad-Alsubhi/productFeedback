@@ -36,9 +36,9 @@ const Roadmap = () => {
       <RoadmapNav
         index={index}
         setIndex={setIndex}
-        live={groupFeedback.Live.length}
-        planned={groupFeedback.Planned.length}
-        InProgress={groupFeedback["In-progress"].length}
+        live={groupFeedback.Live?.length||0}
+        planned={groupFeedback.Planned?.length||0}
+        InProgress={groupFeedback["In-progress"]?.length||0}
       />
       <div className={`md:grid grid-cols-3 gap-3`}>
         {isLoading ? (

@@ -17,10 +17,10 @@ const StatusColumn = ({
   return (
     <div className={`${customStyle} `}>
       <h1 className="font-bold mt-7">
-        {title} ({data.length})
+        {title} ({data?.length||0})
       </h1>
       <h2 className="text-[#647196] mb-6">{subTitle}</h2>
-      {data!.map((feedback) => (
+      {data?.map((feedback) => (
         <div
           style={{ "--color": color } as React.CSSProperties}
           className={`before:w-full mt-7 shrink-0 pt-6 before:h-2 rounded-xl before:rounded-t-xl before:absolute before:bg-[var(--color)] before:top-0 before:left-0 relative bg-white [&>*]:flex-col-reverse [&>*>.commentsNum]:absolute [&>*>.commentsNum]:right-4`}

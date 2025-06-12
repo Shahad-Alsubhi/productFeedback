@@ -16,6 +16,7 @@ const FeedbackContainer = () => {
   
   useEffect(() => {
     if (data) {
+      console.log(data)
       let sortedData = [...data];
       switch (sortOption) {
         case "Most Comments": {

@@ -22,19 +22,19 @@ const RoadmapList = () => {
         >
           Planned{" "}
           <span className="float-right font-bold">
-            {groupFeedback.Planned.length || ""}
+            {groupFeedback.Planned?.length || ""}
           </span>
         </li>
         <li className="relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-Purple-default pl-6">
           In-Progress{" "}
           <span className="float-right font-bold">
-            {groupFeedback["In-progress"].length || ""}
+            {groupFeedback["In-progress"]?.length || ""}
           </span>
         </li>
         <li className="relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-blue-light pl-6">
           Live{" "}
           <span className="float-right font-bold">
-            {groupFeedback.Live.length || ""}
+            {groupFeedback.Live?.length || ""}
           </span>
         </li>
       </ul>
